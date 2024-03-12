@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let json = `
+        {
+            "nome": "Matheus",
+            "idade": 30,
+            "profissao": "Programador"
+            
+        }
+        `
+        console.log(json)
+        console.log(typeof json)
+
+        // JSON
+
+        let obj = JSON.parse(json)
+
+        console.log(obj)
+        console.log(typeof obj)
+
+        console.log(obj.nome)
+        console.log(obj["idade"])
+
+        //obj to JSON
+        let jsonFromObj = JSON.stringify(obj)
+
+        console.log(jsonFromObj)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
